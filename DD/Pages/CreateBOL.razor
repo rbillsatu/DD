@@ -3,6 +3,7 @@
 <h1>Create New BOL</h1>
 
 <form class="row">
+    <!-- First Section of Input fields -->
     <div class="row">
         <div class="col-md-3">
             <label for="BOLID" class="form-label">BOL #</label>
@@ -24,23 +25,17 @@
             <label for="inputTrailer" class="form-label">Trailer #</label>
             <input type="text" class="form-control" id="inputTrailerID">
         </div>
-
-        <!-- Forces a new line break-->
-        <div class="w-100"></div>
-
         <div class="col-sm-11 pt-3">
             <label for="inputTrailer" class="form-label">Trailer Contents</label>
             <textarea class="form-control" placeholder="Trailer Contents"></textarea>
-
         </div>
-
     </div>
-    <div class="col-md-4 pt-5 p-1">
-        Pickup Location
-        <!-- <label for="inputPBusName" class="form-label">PBusinessName</label>-->
+    <!-- Pickup Location Address -->
+    <div class="col-md-4 pt-5 p-1" id="PickupDivID">
+        <label for="PickupLocation" class="form-label">Pickup Location</label>
         <input type="text" class="form-control" id="inputPBusName" placeholder="PBusinessName">
-        <input type="text" class="form-control" id="inputStreetAddress" placeholder="PStreetAdress">
-        <input type="text" class="form-control" id="inputStreetAddress2" placeholder="PStreetAdress2">
+        <input type="text" class="form-control" id="inputPStreetAddress" placeholder="PStreetAdress">
+        <input type="text" class="form-control" id="inputPStreetAddress2" placeholder="PStreetAdress2">
         <div class="row justify-content-start">
             <div class="col-3">
                 <input type="text" class="form-control" id="PCity" placeholder="PCity">
@@ -54,8 +49,25 @@
             </div>
         </div>
     </div>
-
-
+    <!-- Delivery Location Address -->
+    <div class="col-md-4 pt-5 p-1" id="DeliveryDivID">
+        <label for="DeliveryLocation" class="form-label">Delivery Location</label>
+        <input type="text" class="form-control" id="inputDBusName" placeholder="DBusinessName">
+        <input type="text" class="form-control" id="inputDtreetAddress" placeholder="DStreetAdress">
+        <input type="text" class="form-control" id="inputDtreetAddress2" placeholder="DStreetAdress2">
+        <div class="row justify-content-start">
+            <div class="col-3">
+                <input type="text" class="form-control" id="PCity" placeholder="PCity">
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" id="PState" placeholder="PState">
+            </div>
+            <div class="col-3">
+                <input type="text" class="form-control" id="PZipCode" placeholder="PZipCode">
+            </div>
+        </div>
+    </div>
+    <!-- Submit Button -->
     <div class="col-12 pt-5 p-1">
         <button type="submit" class="btn btn-primary">Save</button>
     </div>

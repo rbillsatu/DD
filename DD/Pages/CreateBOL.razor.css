@@ -1,0 +1,14 @@
+﻿h1 {
+    align-content: center;
+    padding-left: 600px;
+    font-weight: bold;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+/*#DeliveryDivID, #PickupDivID {
+
+    background: linear-gradient(180deg, rgba(223,223,234,1) 5%, rgba(188,188,235,1) 60%);
+}*/
